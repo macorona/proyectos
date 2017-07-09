@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+* {
+	font-family:'Raleway', Helvetica, sans-serif;
+}
+
+header, nav, section, article, aside, figure, footer{
+	display:block;
+}
+.limpiar{
+	clear:both;
+}
+
+body{
+    margin:30px;
+}
+p{
+	font-family:'Raleway', Helvetica, sans-serif;
+	font-size:14px;
+	color:#333;
+	margin:6px;
+}
+h1{
+	font-family:'Raleway', Helvetica, sans-serif;
+	font-size:18px;
+	color:#333;
+	margin:6px;
+}
+
+cite h3{
+	padding-bottom: 50px;
+}
+
+/*** diseño ****/
+#contenedor {
+    width: 950px;
+    padding: 25px;
+    margin: 0 auto;
+    background: #FFF;
+
+}
+
+/*--- encabezado----*/
+#cabecera {
+    height: 84px;
+}
+
+#logo {
+    width: 351px;
+    height: 84px;
+    float: left;
+}
+#cabecera ul{
+	width:120px;
+	height:64px;
+	display:block;
+	float:right;
+	padding:0;
+	margin:0;
+	list-style:none;
+	padding-top:20px;
+}
+/*---para IE 8----*/
+#cabecera ul li {
+    float: right;
+}
+
+#cabecera li a{
+    width: 45px;
+    height: 45px;
+    float: right;
+    margin-left: 10px;
+    display: block;
+
+}
+
+.historia {
+	width: 90%;
+	padding: 5px;
+}
+
+.div-img .img:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #FF2F04;
+-webkit-box-shadow: 0px 0px 15px 15px #FF2F04;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+/*--- menu principal----*/
+#menu {
+    height: 80px;
+    border-bottom: 4px solid #FF2F04;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 474px;
+    height: 60px;
+    display: block;
+    background: #FF2F04;
+    float: right;
+    padding-top:20px;
+
+}
+/*---para IE 8----*/
+#menu li {
+    float: left;
+}
+/*--lineas y espacios entre opciones de menu---*/
+#menu li a{
+    line-height: 40px; /*--interlineado para determinal el alto--*/
+    display: block;    /*-- para que se comporten como caja --*/
+    padding:0 25px;
+    border-right:4px solid #FFF;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size:15px;
+    color:#FFF;
+    font-weight:bold;
+    text-decoration:none;
+}
+/*--con el evento del mouse ensima, cambia el color --*/
+#menu li a:hover{
+	color:#000;
+}
+
+#myCarousel {
+	padding: 5px;
+}
+
+#piepagina{
+	height: 60px;
+	border-top: 4px solid #FF2F04;
+	border-bottom: 4px solid #FF2F04;
+}
+
+#piepagina a {
+		color:#333;
+}
+
+#cuerpo{
+	padding-bottom: 30px;
+	font-family:sans-serif;
+}
+
+/******************************************/
+/***    DISEÑO PARA TABLETAS           ****/
+/******************************************/
+@media only screen and (max-width:768px){
+    body{
+        margin:15px;
+    }
+
+    #contenedor {
+        width: 96%;
+        padding: 2%;
+    }
+    /*--encabezado--*/
+    #cabecera {
+        height: auto;
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    #cabecera ul {
+        display: none;
+    }
+    /*--- Menu ---*/
+    #menu ul{
+            float:none;
+            margin:0 auto;
+    }
+
+}
+/******************************************/
+/***    DISEÑO PARA MOVILES 480        ****/
+/******************************************/
+@media only screen and (max-width:480px){
+    body{
+        margin: 8px;
+    }
+    #contenedor {
+        width: 98%;
+        padding: 1%;
+    }
+
+	/*--- Menu ---*/
+	#menu{
+		height:auto;
+		border-bottom:none;
+	}
+	#menu ul{
+		width:100%;
+		height:auto;
+		background:none;
+		float:none;
+		padding-top:0;
+	}
+	#menu li{
+		float:none;
+	}
+	#menu li a{
+		line-height:30px;
+		display:block;
+		background:#FF2F04;
+		padding:0;
+		text-align:center;
+		border-right:none;
+		font-size:13px;
+		margin-bottom:4px;
+	}
+}
+/******************************************/
+/***    DISEÑO PARA MOVILES 320        ****/
+/******************************************/
+@media only screen and (max-width:320px){
+    #logo img {
+        width: 60%;
+        height: auto;
+    }
+}
+/******************************************/
+/***    DISEÑO PARA MOVILES 240        ****/
+/******************************************/
+@media only screen and (max-width:240px){
+    body{
+        margin: 5px;
+    }
+
+}
